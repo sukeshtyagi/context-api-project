@@ -1,22 +1,50 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import { GlobalContext } from "./state";
-
+import { useNavigate } from "react-router-dom";
 function Header() {
   const { state } = useContext(GlobalContext);
+  const navigate = useNavigate();
   return (
     <div className="outer  box-border w-screen bg-green-500">
       <div className="container  box-border w-full border border-green-500 flex flex-wrap items-center justify-center gap-10 text-2xl">
-        <p className="home  box-border bg-inherit">Home</p>
-        <p className="add  box-border bg-inherit">Add Product</p>
-        <p className="cart  box-border bg-inherit">Cart</p>
-        <div className="cartDiv box-border flex justify-start items-center gap-2 bg-inherit">
+        <p
+          className="home  box-border bg-inherit cursor-pointer hover:text-zinc-200"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Home
+        </p>
+        <p
+          className="add  box-border bg-inherit cursor-pointer hover:text-zinc-200"
+          onClick={() => {
+            navigate("/add");
+          }}
+        >
+          Add Product
+        </p>
+        <p
+          className="cart  box-border bg-inherit cursor-pointer hover:text-zinc-200"
+          onClick={() => {
+            navigate("/cart");
+          }}
+        >
+          Cart
+        </p>
+
+        <div
+          className="cartDiv box-border flex justify-start items-center gap-2 bg-inherit cursor-pointer hover:text-zinc-200"
+          onClick={() => {
+            navigate("/cart");
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-10 h-10 text-red-700 bg-inherit "
+            className="w-10 h-10 text-red-700 bg-inherit cursor-pointer hover:text-zinc-200"
           >
             <path
               strokeLinecap="round"
