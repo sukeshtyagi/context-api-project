@@ -3,9 +3,8 @@ import Header from "./Header";
 import { GlobalContext } from "../components/state";
 
 function Home() {
-
   const { state } = useContext(GlobalContext);
-  console.log(state);
+  console.log(state.products);
 
   return (
     <div className="outer w-screen flex flex-col m-auto">
@@ -20,7 +19,7 @@ function Home() {
           </tr>
         </thead>
         <tbody>
-          {state.map((item, index) => (
+          {state.products.map((item, index) => (
             <tr key={index}>
               <td className="px-2 py-2 border text-center">{item.name}</td>
               <td className="px-2 py-2 border text-center">{item.brand}</td>

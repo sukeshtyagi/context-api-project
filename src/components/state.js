@@ -2,54 +2,56 @@ import { createContext, useState } from "react";
 
 const GlobalContext = createContext();
 
-const initialState = [
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  {
-    name: "mobile",
-    brand: "Samsung",
-    price: "Rs 5000",
-  },
-  
-];
+const initialState = {
+  products: [
+    {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    }, {
+      name: "mobile",
+      brand: "Samsung",
+      price: "Rs 5000",
+    },
+  ],
+  cartCount:0
+};
 
 const GlobalContextProvider = ({ children }) => {
   const [state, setState] = useState(initialState);
