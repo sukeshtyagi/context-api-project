@@ -3,8 +3,8 @@ import Header from "./Header";
 import { GlobalContext } from "../components/state";
 
 function Home() {
-  const { state } = useContext(GlobalContext);
-  console.log(state.products);
+  const { state, setState } = useContext(GlobalContext);
+  const cartCount = state.cartCount;
 
   return (
     <div className="outer w-screen flex flex-col m-auto">
@@ -32,6 +32,9 @@ function Home() {
                   strokeWidth={1.5}
                   stroke="currentColor"
                   className="w-6 h-6 text-center mx-auto"
+                  onClick={() => {
+                    setState({ ...state, cartCount: cartCount + 1 });
+                  }}
                 >
                   <path
                     strokeLinecap="round"
