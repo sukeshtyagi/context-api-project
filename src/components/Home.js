@@ -1,59 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header from "./Header";
+import { GlobalContext } from "../components/state";
 
 function Home() {
-  const prdts = [
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-  ];
+
+  const { state } = useContext(GlobalContext);
+  console.log(state);
+
   return (
     <div className="outer w-screen flex flex-col m-auto">
       <Header />
@@ -67,7 +20,7 @@ function Home() {
           </tr>
         </thead>
         <tbody>
-          {prdts.map((item, index) => (
+          {state.map((item, index) => (
             <tr key={index}>
               <td className="px-2 py-2 border text-center">{item.name}</td>
               <td className="px-2 py-2 border text-center">{item.brand}</td>
