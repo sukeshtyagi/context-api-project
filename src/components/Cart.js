@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Cart() {
   const { state, setState } = useContext(GlobalContext);
   const cartItems = state.cartItems;
-  console.log(cartItems);
+  const cartCount = state.cartCount;
   const cartTotal = cartItems.reduce(
     (acc, curr) => acc + parseFloat(curr.price),
     0
@@ -14,14 +14,7 @@ function Cart() {
   const navigate = useNavigate();
   return (
     <div>
-      <h1
-        className="heading text-left ml-20 text-xl my-8 cursor-pointer hover:text-red-300"
-        onClick={() => {
-          navigate("/");
-        }}
-      >
-        Home
-      </h1>
+     
       <h1 className="heading text-center text-xl font-semibold my-8">
         Items In Cart
       </h1>
@@ -46,6 +39,7 @@ function Cart() {
                 cartItems: prevState.cartItems.filter(
                   (item, idx) => idx !== index
                 ),
+                cartCount:cartCount-1
               }));
             }}
           >

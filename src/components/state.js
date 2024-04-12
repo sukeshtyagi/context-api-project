@@ -5,31 +5,31 @@ const GlobalContext = createContext();
 const initialState = {
   products: [
     {
-      name: "mobile",
+      name: "tv",
       brand: "Samsung",
       price: " 5000",
     }, {
-      name: "mobile",
+      name: "refrigerator",
       brand: "Samsung",
       price: " 5000",
     }, {
-      name: "mobile",
+      name: "led",
       brand: "Samsung",
       price: " 5000",
     }, {
-      name: "mobile",
+      name: "washing machine",
       brand: "Samsung",
       price: " 5000",
     }, {
-      name: "mobile",
+      name: "trimmer",
       brand: "Samsung",
       price: " 5000",
     }, {
-      name: "mobile",
+      name: "home theatre",
       brand: "Samsung",
       price: " 5000",
     }, {
-      name: "mobile",
+      name: "speaker",
       brand: "Samsung",
       price: " 5000",
     }, {

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "./Header";
 import { GlobalContext } from "../components/state";
 
@@ -8,7 +8,6 @@ function Home() {
 
   return (
     <div className="outer w-screen flex flex-col m-auto">
-      <Header />
       <table className="w-1/2 mx-auto border-spacing-5">
         <thead>
           <tr>
@@ -39,9 +38,9 @@ function Home() {
                       cartItems: [
                         ...state.cartItems,
                         {
-                          "name": item.name,
-                          "brand": item.brand,
-                          "price": item.price,
+                          name: item.name,
+                          brand: item.brand,
+                          price: item.price,
                         },
                       ],
                     });
