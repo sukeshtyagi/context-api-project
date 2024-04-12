@@ -8,49 +8,61 @@ const initialState = {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
-    }, {
+    },
+    {
       name: "mobile",
       brand: "Samsung",
       price: "Rs 5000",
     },
   ],
-  cartCount:0
+  cartItems: [],
+
+  cartCount: 0,
 };
 
 const GlobalContextProvider = ({ children }) => {
