@@ -5,7 +5,6 @@ import { GlobalContext } from "../components/state";
 function Home() {
   const { state, setState } = useContext(GlobalContext);
   const cartCount = state.cartCount;
-  console.log(state.cartItems);
 
   return (
     <div className="outer w-screen flex flex-col m-auto">

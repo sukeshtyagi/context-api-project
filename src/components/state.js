@@ -7,57 +7,35 @@ const initialState = {
     {
       name: "mobile",
       brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
+      price: " 5000",
+    }, {
       name: "mobile",
       brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
+      price: " 5000",
+    }, {
       name: "mobile",
       brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
+      price: " 5000",
+    }, {
       name: "mobile",
       brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
+      price: " 5000",
+    }, {
       name: "mobile",
       brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
+      price: " 5000",
+    }, {
       name: "mobile",
       brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
+      price: " 5000",
+    }, {
       name: "mobile",
       brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
+      price: " 5000",
+    }, {
       name: "mobile",
       brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
-    },
-    {
-      name: "mobile",
-      brand: "Samsung",
-      price: "Rs 5000",
+      price: " 5000",
     },
   ],
   cartItems: [],
